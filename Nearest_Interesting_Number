@@ -1,0 +1,10 @@
+a = int(input().strip())
+ 
+def digit_sum(n):
+    return sum(int(d) for d in str(n))
+ 
+n = a
+while digit_sum(n) % 4 != 0:
+    n += 1
+ 
+print(n)
